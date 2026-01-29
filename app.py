@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import io
 
 # --- 1. 페이지 설정 (위트와 장난기 가득) ---
-st.set_page_config(page_title="비트코인무책임한쾌락", layout="wide", page_icon="🤑")
+st.set_page_config(page_title="비트코인가격예상", layout="wide", page_icon="🤑")
 
 # 커스텀 CSS로 스타일 꾸미기
 st.markdown("""
@@ -68,7 +68,7 @@ def get_bitcoin_data():
     return current_price, data
 
 # 제목과 문구 출력
-st.markdown('<p class="main-title">🤑 코인투자무책임한쾌락 🤑</p>', unsafe_allow_html=True)
+st.markdown('<p class="main-title">🤑 비트코인어디까지갈까? 🤑</p>', unsafe_allow_html=True)
 st.markdown('<p class="sub-text">코스피 5000시대에 주식도 못해서 배아픈데 <span class="highlight">코인이라도~</span> 🚀</p>', unsafe_allow_html=True)
 
 try:
@@ -81,8 +81,8 @@ try:
     col2.info(f"선택한 모드: **{risk_appetite}**\n\n(내부 설정: 기대수익률 {mu*100:.0f}%, 변동성 {sigma*100:.0f}%)")
 
     # --- 4. 몬테카를로 시뮬레이션 엔진 ---
-    st.subheader("🎲 몬테카를로 시뮬레이션 (미래 가격 뽑기)")
-    st.markdown("수많은 평행우주 속 비트코인 가격을 미리 훔쳐봅니다.")
+    st.subheader("🎲 미래 가격 뽑기")
+    st.markdown("멀티버스 속 코인가격")
     
     dt = 1/365
     S0 = current_price
