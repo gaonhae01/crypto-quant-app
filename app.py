@@ -69,7 +69,7 @@ def get_bitcoin_data():
 
 # 제목과 문구 출력
 st.markdown('<p class="main-title">🤑 비트코인어디까지갈까? 🤑</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-text">코스피 5000시대에 주식도 못해서 배아픈데 <span class="highlight">코인이라도~</span> 🚀</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-text"> <span class="highlight">코스피 5000시대에 주식도 못해서 배아픈데 코인이라도~</span> 🚀</p>', unsafe_allow_html=True)
 
 try:
     current_price, hist_data = get_bitcoin_data()
